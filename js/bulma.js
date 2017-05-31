@@ -7,4 +7,12 @@
         burger.classList.toggle('is-active');
         menu.classList.toggle('is-active');
     });
+    $.ajax({
+  method: "GET",
+  url: "https://jsonplaceholder.typicode.com/posts"
+})
+  .done(function( resp ) {
+    console.log(resp);
+  });
+    
 })();
