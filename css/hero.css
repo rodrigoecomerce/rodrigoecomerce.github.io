@@ -5,6 +5,8 @@ body {
 .nav1 {
 background-color: #8a8d8e;
   color: #fff;
+  padding: 0 1px;
+  margin: 0 auto;
 }
 
 .nav2 {
