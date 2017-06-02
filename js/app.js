@@ -1,6 +1,7 @@
 var navbar1 = Vue.component('navbar1', {
   template: `<div class="hero-head hero-head1">
     <nav class="nav nav1">
+<div class="container">
   <div class="nav-right nav-menu">
             <span class="nav-item nav-item1">
               <a href="tel:34993009650">
@@ -11,6 +12,7 @@ var navbar1 = Vue.component('navbar1', {
               </a>
             </span>
   </div>
+</div>
       </nav>
 </div>`
 })
