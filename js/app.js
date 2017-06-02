@@ -1,7 +1,7 @@
 var navbar1 = Vue.component('navbar1', {
   template: `<div class="hero-head hero-head1">
 <div class="container">
-            <span class="nav-item nav-item1 is-right">
+            <span class="nav-item1 is-right">
               <a href="tel:34993009650">
                 <span class="icon is-small">
                   <i class="fa fa-phone"></i>
