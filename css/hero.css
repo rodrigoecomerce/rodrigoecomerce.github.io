@@ -10,9 +10,11 @@ max-height: 40px;
 
 .nav1 {
   max-height: 100%;
-  font-size: 0.5rem;
 }
 
+.nav-item1 {
+  font-size: 0.5rem;
+}
 .nav2 {
 background-color: #737477;
 color: #fff;
