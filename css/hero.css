@@ -8,6 +8,10 @@ background-color: #8a8d8e;
 max-height: 40px;
 }
 
+.nav1-right {
+  max-height: 100%;
+}
+
 .nav2 {
 background-color: #737477;
 color: #fff;
