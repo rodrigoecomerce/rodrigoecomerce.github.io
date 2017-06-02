@@ -2,13 +2,13 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
-.nav1 {
+.hero-head1 {
 background-color: #8a8d8e;
   color: #fff;
 max-height: 40px;
 }
 
-.nav1-right {
+.nav1 {
   max-height: 100%;
 }
 
