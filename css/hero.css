@@ -3,11 +3,13 @@ body {
 }
 
 .nav1 {
-color: #8a8d8e;
+background-color: #8a8d8e;
+  color: #fff;
 }
 
 .nav2 {
-color: #737477;
+background-color: #737477;
+color: #fff;
 }
 
 .header-image {
