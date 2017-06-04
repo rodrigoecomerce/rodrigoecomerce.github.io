@@ -17,10 +17,11 @@ $('.slider').slider();
  // });
   
   $("#form").submit(function(event) {
-   // event.preventDefault();
+   event.preventDefault();
     $('.contato').addClass( "hide" )
     $('.page-body').removeClass( "hide" )
- });
+ this.submit();
+  });
   
     $('#cancel').click(function(){
   $('.contato').addClass( "hide" )
