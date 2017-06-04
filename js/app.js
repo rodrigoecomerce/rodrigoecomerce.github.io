@@ -4,12 +4,21 @@
     $('.button-collapse').sideNav();
 
   }); // end of document ready
-$('.slider').slider();
-  $('.contact').click(function(){
-  $('.contato').removeClass( "hide" )
-    $('.page-body').addClass( "hide" )
-  });
   
+  function showHome(){
+      $('.contato').addClass( "hide" )
+    $('.page-body').removeClass( "hide" )
+  }
+  
+    function hideHome(){
+      $('.contato').addClass( "hide" )
+    $('.page-body').removeClass( "hide" )
+  }
+  
+$('.slider').slider();
+  $('.contact').click(hideHome());
+  
+  $('#logo-container').click(showHome());
   
  // $('#submit').click(function(){
 //  $('.contato').addClass( "hide" )
@@ -18,14 +27,10 @@ $('.slider').slider();
   
   $("#form").submit(function(event) {
    event.preventDefault();
-    $('.contato').addClass( "hide" )
-    $('.page-body').removeClass( "hide" )
+   showHome();
  this.submit();
   });
   
-    $('#cancel').click(function(){
-  $('.contato').addClass( "hide" )
-    $('.page-body').removeClass( "hide" )
-  });
+    $('#cancel').click(showHome());
   
 })(jQuery); // end of jQuery name space
