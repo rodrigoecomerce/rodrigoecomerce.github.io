@@ -11,8 +11,8 @@
   }
   
     function hideHome(){
-      $('.contato').addClass( "hide" )
-    $('.page-body').removeClass( "hide" )
+    $('.page-body').addClass( "hide" )
+        $('.contato').removeClass( "hide" )
   }
   
 $('.slider').slider();
