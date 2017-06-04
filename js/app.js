@@ -6,6 +6,6 @@
   }); // end of document ready
 $('.slider').slider();
   $('.contact').click(function(){
-  $('.contato').show();
+  $('.contato').removeClass( "hide" )
   });
 })(jQuery); // end of jQuery name space
