@@ -11,12 +11,12 @@ $('.slider').slider();
   });
   
   
-  $('.submit').click(function(){
+  $('#submit').click(function(){
   $('.contato').addClass( "hide" )
     $('.page-body').removeClass( "hide" )
   });
   
-    $('.cancel').click(function(){
+    $('#cancel').click(function(){
   $('.contato').addClass( "hide" )
     $('.page-body').removeClass( "hide" )
   });
