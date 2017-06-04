@@ -11,7 +11,13 @@
     $('.page-body').removeClass( "hide" )
         $('#linkHome').addClass( "active" )
   }
-  
+  function cleanForm(){
+    $('#name').val('');
+    $('#phone').val('');
+    $('#email').val('');
+    $('#subject').val('');
+    $('#body').val('');
+  }
     function hideHome(){
     $('.page-body').addClass( "hide" )
           $('#linkHome').removeClass( "active" )
@@ -31,10 +37,13 @@ $('.slider').slider();
   
   $("#form").submit(function(event) {
    event.preventDefault();
-   showHome();
+   cleanForm();
+    showHome();
+    
  this.submit();
   });
   
-    $('#cancel').click(function(){showHome()});
+    $('#cancel').click(function(){showHome();
+                                 cleanForm();});
   
 })(jQuery); // end of jQuery name space
