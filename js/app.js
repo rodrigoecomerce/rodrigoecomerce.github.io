@@ -11,10 +11,10 @@ $('.slider').slider();
   });
   
   
-  $('#submit').click(function(){
-  $('.contato').addClass( "hide" )
-    $('.page-body').removeClass( "hide" )
-  });
+ // $('#submit').click(function(){
+ // $('.contato').addClass( "hide" )
+  //  $('.page-body').removeClass( "hide" )
+ // });
   
     $('#cancel').click(function(){
   $('.contato').addClass( "hide" )
