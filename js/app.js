@@ -14,7 +14,7 @@
   
     function hideHome(){
     $('.page-body').addClass( "hide" )
-          $('#linkContato').removeClass( "active" )
+          $('#linkHome').removeClass( "active" )
         $('.contato').removeClass( "hide" )
           $('#linkContato').addClass( "active" )
   }
