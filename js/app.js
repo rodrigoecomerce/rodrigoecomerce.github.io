@@ -28,7 +28,8 @@
 $('.slider').slider();
   $('.contact').click(function(){hideHome()});
   
-  //$('#logo-container').click(showHome());
+  $('#logo-container').click(function(){showHome();
+                                       cleanForm();});
   
  // $('#submit').click(function(){
 //  $('.contato').addClass( "hide" )
