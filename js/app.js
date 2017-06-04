@@ -16,7 +16,8 @@ $('.slider').slider();
  //   $('.page-body').removeClass( "hide" )
  // });
   
-  $("#form").submit(function() {  
+  $("#form").submit(function(event) {
+    event.preventDefault();
     $('.contato').addClass( "hide" )
     $('.page-body').removeClass( "hide" )
  });
