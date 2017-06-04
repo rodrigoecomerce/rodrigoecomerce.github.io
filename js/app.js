@@ -16,7 +16,7 @@
   }
   
 $('.slider').slider();
-  $('.contact').click(hideHome());
+  $('.contact').click(function(){hideHome()});
   
   //$('#logo-container').click(showHome());
   
@@ -31,6 +31,6 @@ $('.slider').slider();
  this.submit();
   });
   
-    $('#cancel').click(showHome());
+    $('#cancel').click(function(){showHome()});
   
 })(jQuery); // end of jQuery name space
