@@ -116,14 +116,16 @@
   <div class="row contato hide">
     <form class="col s12">
       <div class="row">
+	            
+	      
         <div class="input-field col s12">
-          <input id="name" type="text" class="validate">
+          <input id="name" type="text" class="validate" required data-required-message="Por favor insira um nome.">
           <label for="name">Nome</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="phone" type="tel" class="validate" maxlength="15" name="phone" pattern="[0-9]{10,11}$">
+          <input id="phone" type="tel" class="validate" maxlength="15" name="phone"  required pattern="[0-9]{10,11}$" required data-required-message="Por favor insira um telefone." data-type-message="Por favor insira um telefone válido.">
           <label for="phone">Telefone</label>
         </div>
         <div class="input-field col s6">
@@ -132,12 +134,7 @@
         </div>
  
 	    </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
+ 
 	          <div class="row">
         <div class="input-field col s12">
           <input id="subject" type="text" class="validate">
