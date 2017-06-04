@@ -31,6 +31,10 @@ $('.slider').slider();
   $('#logo-container').click(function(){showHome();
                                        cleanForm();});
   
+  
+  $('#linkHome').click(function(){showHome();
+                                       cleanForm();});
+  
  // $('#submit').click(function(){
 //  $('.contato').addClass( "hide" )
  //   $('.page-body').removeClass( "hide" )
