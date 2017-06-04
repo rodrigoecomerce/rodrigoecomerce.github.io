@@ -7,12 +7,16 @@
   
   function showHome(){
       $('.contato').addClass( "hide" )
+    $('.contato').removeClass( "active" )
     $('.page-body').removeClass( "hide" )
+        $('.page-body').addClass( "active" )
   }
   
     function hideHome(){
     $('.page-body').addClass( "hide" )
+          $('.page-body').removeClass( "active" )
         $('.contato').removeClass( "hide" )
+          $('.contato').addClass( "active" )
   }
   
 $('.slider').slider();
