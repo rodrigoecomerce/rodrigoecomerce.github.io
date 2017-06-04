@@ -7,16 +7,16 @@
   
   function showHome(){
       $('.contato').addClass( "hide" )
-    $('.contato').removeClass( "active" )
+    $('#linkContato').removeClass( "active" )
     $('.page-body').removeClass( "hide" )
-        $('.page-body').addClass( "active" )
+        $('#linkHome').addClass( "active" )
   }
   
     function hideHome(){
     $('.page-body').addClass( "hide" )
-          $('.page-body').removeClass( "active" )
+          $('#linkContato').removeClass( "active" )
         $('.contato').removeClass( "hide" )
-          $('.contato').addClass( "active" )
+          $('#linkContato').addClass( "active" )
   }
   
 $('.slider').slider();
