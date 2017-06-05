@@ -31,7 +31,7 @@ var app = angular.module("app", ["ngRoute"]);
     restrict: 'A',
     controller: 'NavController',
     controllerAs: 'ctrl',
-    template: 'nav.html'
+    templateUrl: 'nav.html'
   };
 });
   
