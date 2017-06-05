@@ -56,7 +56,7 @@ var app = angular.module("app", ["ngRoute"]);
           controller: 'HelloController'
         })       
        .otherwise({
-        redirectTo: '#!/'
+        redirectTo: '/'
        });
     
      // use the HTML5 History API
