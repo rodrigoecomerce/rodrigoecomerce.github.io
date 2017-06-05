@@ -26,7 +26,14 @@ var app = angular.module("app", ["ngRoute"]);
 
 });
     
-      
+      app.directive('navbar', function () {
+  return {
+    restrict: 'A',
+    controller: 'NavController',
+    controllerAs: 'ctrl',
+    template: 'nav.html'
+  };
+});
   
   app.controller("ContatoController", function($scope) {
 });
