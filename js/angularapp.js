@@ -18,7 +18,9 @@ var app = angular.module("app", ["ngRoute"]);
   app.controller("MainController", function($scope) {
     $('.slider').slider();
 });
-    
+      app.controller("NavController", function($scope) {
+ $('.button-collapse').sideNav();
+      });
   
   app.controller("HelloController", function($scope) {
 
