@@ -19,19 +19,30 @@ var app = angular.module("app", ["ngRoute"]);
     $('.slider').slider();
 });
     
+  
+  app.controller("HelloController", function($scope) {
+
+});
     
+      
+  
   app.controller("ContatoController", function($scope) {
 });
     app.config(function($routeProvider) {
       $routeProvider
+        .when('/', {
+          templateUrl: 'mainpage.html',
+          controller: 'MainController'
+        })
         .when('/contato', {
           templateUrl: 'contactpage.html',
           controller: 'ContatoController'
         })
-        .when('/', {
-          templateUrl: 'mainpage.html',
-          controller: 'MainController'
+      .when('/hello', {
+          templateUrl: 'hello.html',
+          controller: 'HelloController'
         });
+        
         //.otherwise({
          // redirectTo: '/'
         //});
