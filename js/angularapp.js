@@ -30,7 +30,9 @@ var app = angular.module("app", ["ngRoute"]);
 
 });
   
-  
+    app.controller("FooterController", function($scope) {
+
+});
   app.controller("ServicosController", function($scope) {
 
 });
@@ -43,7 +45,16 @@ var app = angular.module("app", ["ngRoute"]);
     restrict: 'A',
     controller: 'NavController',
     controllerAs: 'ctrl',
-    templateUrl: 'nav.html'
+    templateUrl: 'http://www.odati.com.br/templates/nav.html'
+  };
+});
+  
+        app.directive('footer', function () {
+  return {
+    restrict: 'A',
+    controller: 'FooterController',
+    controllerAs: 'ctrl',
+    templateUrl: 'http://www.odati.com.br/templates/footer.html'
   };
 });
   
