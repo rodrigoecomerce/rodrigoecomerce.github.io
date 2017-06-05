@@ -173,6 +173,14 @@
 -->
 	
 	<div ng-view></div>
+	 <div>
+    <p><b>Vamos ver o que está acontecendo?</b></p>
+    <pre>Path ($location.path()) = {{$location.path()}}</pre>
+    <pre>Template ($route.current.templateUrl) = {{$route.current.templateUrl}}</pre>
+    <pre>Controlador ($route.current.controller) = {{$route.current.controller}}</pre>
+    <pre>Titulo da Página ($route.current.scope.titulo) = {{$route.current.scope.titulo}}</pre>
+    <pre>Parâmetros da URL ($routeParams) = {{$routeParams}}</pre>
+</div>
 	
   <footer class="page-footer grey lighten-2">
     <div class="container">
