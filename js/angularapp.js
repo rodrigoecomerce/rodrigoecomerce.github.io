@@ -18,6 +18,7 @@ var app = angular.module("app", ["ngRoute"]);
   $locationProvider.hashPrefix('');
 }]);
   app.controller("MainController", function($scope) {
+    $('.slider').slider();
 });
     
     
