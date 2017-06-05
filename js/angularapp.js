@@ -60,7 +60,7 @@ var app = angular.module("app", ["ngRoute"]);
           controller: 'HelloController'
         })     
             .when('/empresa', {
-          templateUrl: 'https://rodrigoecomerce.github.io/templates/empresa.html',
+          templateUrl: 'http://www.odati.com.br/templates/empresa.html',
           controller: 'EmpresaController'
         })     
        .otherwise({
