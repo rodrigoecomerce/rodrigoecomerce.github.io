@@ -14,7 +14,7 @@ var app = angular.module("myApp", ["ngRoute"]);
           controller: 'ContatoController'
         })
         .when('/', {
-          templateUrl: 'https://rodrigoecomerce.github.io/templates/mainpage.html',
+          templateUrl: 'mainpage.html',
           controller: 'MainController'
         }).otherwise({
           redirectTo: '/'
