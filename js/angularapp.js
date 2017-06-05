@@ -50,7 +50,7 @@ var app = angular.module("app", ["ngRoute"]);
     restrict: 'A',
     controller: 'NavController',
     controllerAs: 'ctrl',
-    templateUrl: 'http://www.odati.com.br/templates/nav.html'
+    templateUrl: 'http://www.odati.com.br/templates/navbar.html'
   };
 });
   
