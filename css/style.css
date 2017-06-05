@@ -1,9 +1,10 @@
 .about {
   background-image: url('https://rodrigoecomerce.github.io/images/tech.jpg');
+      background-repeat: no-repeat;
+    background-size: cover;
 }
 .full-page-panel {
-    background-repeat: no-repeat;
-    background-size: cover;
+
   width: 100%;
 position: relative;
 padding: 3rem 0;
