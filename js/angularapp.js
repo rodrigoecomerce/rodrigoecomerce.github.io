@@ -3,9 +3,9 @@
 var app = angular.module("app", ["ngRoute"]); 
   
   
-  app.run([ '$templateCache', function($templateCache) {
-  $templateCache.put('http://www.odati.com.br/templates/home.html', 'http://www.odati.com.br/templates/contato.html', 'http://www.odati.com.br/templates/empresa.html', 'http://www.odati.com.br/templates/servicos.html');
-}]);
+//  app.run([ '$templateCache', function($templateCache) {
+//  $templateCache.put('http://www.odati.com.br/templates/home.html', 'http://www.odati.com.br/templates/contato.html', 'http://www.odati.com.br/templates/empresa.html', 'http://www.odati.com.br/templates/servicos.html');
+//}]);
 /*  
   app.run(function($rootScope, $route, $routeParams, $location) {
       
