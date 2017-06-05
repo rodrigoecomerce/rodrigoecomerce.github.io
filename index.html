@@ -45,6 +45,7 @@
     </div>
   </nav>
 	<!-- Main page -->
+	<!--
 	<div class="page-body">
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
@@ -169,9 +170,9 @@
 	       <button id="cancel" class="btn waves-effect waves-light grey lighten-4">Cancelar<i class="material-icons right">cancel</i></button>
           </form>
   </div>
-
+-->
 	
-	<div id="app"></div>
+	<div ng-view></div>
 	
   <footer class="page-footer grey lighten-2">
     <div class="container">
@@ -267,28 +268,28 @@
    <div class="slider">
     <ul class="slides">
       <li>
-        <img class="responsive-img" src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <img class="responsive-img" src="http://lorempixel.com/580/250/nature/1"> 
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-        <img class="responsive-img" src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <img class="responsive-img" src="http://lorempixel.com/580/250/nature/2"> 
         <div class="caption left-align">
           <h3>Left Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-        <img class="responsive-img" src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <img class="responsive-img" src="http://lorempixel.com/580/250/nature/3"> 
         <div class="caption right-align">
           <h3>Right Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-        <img class="responsive-img" src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <img class="responsive-img" src="http://lorempixel.com/580/250/nature/4"> 
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -304,7 +305,6 @@
   <div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
@@ -345,10 +345,8 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
           
-	
-	<script src="https://unpkg.com/vue@2.2.1"></script>
-	<script src="https://unpkg.com/vue-router@2.5.3/dist/vue-router.js"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>	
 	<script type="text/javascript"
 		src="https://rodrigoecomerce.github.io/js/app.js"></script>
 
