@@ -14,6 +14,9 @@ var app = angular.module("app", ["ngRoute"]);
       $rootScope.$location = $location;
       $rootScope.$routeParams = $routeParams;
 });
+  app.config(['$locationProvider', function($locationProvider) {
+  $locationProvider.hashPrefix('');
+}]);
   app.controller("MainController", function($scope) {
 });
     
