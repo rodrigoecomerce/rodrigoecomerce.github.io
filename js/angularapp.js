@@ -30,6 +30,10 @@ var app = angular.module("app", ["ngRoute"]);
 
 });
   
+  
+  app.controller("ServicosController", function($scope) {
+
+});
     app.controller("EmpresaController", function($scope) {
 
 });
@@ -62,6 +66,10 @@ var app = angular.module("app", ["ngRoute"]);
             .when('/empresa', {
           templateUrl: 'http://www.odati.com.br/templates/empresa.html',
           controller: 'EmpresaController'
+        })     
+                  .when('/servicos', {
+          templateUrl: 'http://www.odati.com.br/templates/servicos.html',
+          controller: 'ServicosController'
         })     
        .otherwise({
         redirectTo: '/'
