@@ -14,9 +14,7 @@ var app = angular.module("app", ["ngRoute"]);
       $rootScope.$location = $location;
       $rootScope.$routeParams = $routeParams;
 });
-  app.config(['$locationProvider', function($locationProvider) {
-  $locationProvider.hashPrefix('');
-}]);
+
   app.controller("MainController", function($scope) {
     $('.slider').slider();
 });
@@ -36,5 +34,11 @@ var app = angular.module("app", ["ngRoute"]);
         }).otherwise({
           redirectTo: '/'
         });
+    
+     // use the HTML5 History API
+        $locationProvider.html5Mode(true);
+        $locationProvider.hashPrefix('');
+
+    
     });
 })();
