@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 var app = angular.module("app", ["ngRoute"]); 
-  
+/*  
   app.run(function($rootScope, $route, $routeParams, $location) {
       
       $rootScope.$on('$routeChangeStart',function(evt,next,current){
@@ -14,7 +14,7 @@ var app = angular.module("app", ["ngRoute"]);
       $rootScope.$location = $location;
       $rootScope.$routeParams = $routeParams;
 });
-
+*/
   app.controller("MainController", function($scope) {
     $('.slider').slider();
 });
