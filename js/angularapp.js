@@ -18,8 +18,12 @@ var app = angular.module("app", ["ngRoute"]);
   app.controller("MainController", function($scope) {
     $('.slider').slider();
 });
-      app.controller("NavController", function($scope) {
+      app.controller("NavController", function($scope, $location) {
  $('.button-collapse').sideNav();
+        
+         $scope.isActive = function (viewLocation) { 
+        return viewLocation === $location.path();
+    }
       });
   
   app.controller("HelloController", function($scope) {
