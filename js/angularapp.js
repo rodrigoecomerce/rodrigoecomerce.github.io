@@ -52,11 +52,11 @@ var app = angular.module("app", ["ngRoute"]);
     app.config(function($routeProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: 'mainpage.html',
+          templateUrl: 'http://www.odati.com.br/templates/home.html',
           controller: 'MainController'
         })
         .when('/contato', {
-          templateUrl: 'contactpage.html',
+          templateUrl: 'http://www.odati.com.br/templates/contato.html',
           controller: 'ContatoController'
         })
       .when('/hello', {
