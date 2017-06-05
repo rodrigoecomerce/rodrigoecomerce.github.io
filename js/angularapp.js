@@ -54,11 +54,10 @@ var app = angular.module("app", ["ngRoute"]);
       .when('/hello', {
           templateUrl: 'hello.html',
           controller: 'HelloController'
-        });
-        
-        //.otherwise({
-         // redirectTo: '/'
-        //});
+        })       
+       .otherwise({
+        redirectTo: '#!/'
+       });
     
      // use the HTML5 History API
       //  $locationProvider.html5Mode(true);
