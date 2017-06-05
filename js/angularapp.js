@@ -29,6 +29,10 @@ var app = angular.module("app", ["ngRoute"]);
   app.controller("HelloController", function($scope) {
 
 });
+  
+    app.controller("EmpresaController", function($scope) {
+
+});
     
       app.directive('navbar', function () {
   return {
@@ -54,7 +58,11 @@ var app = angular.module("app", ["ngRoute"]);
       .when('/hello', {
           templateUrl: 'hello.html',
           controller: 'HelloController'
-        })       
+        })     
+            .when('/empresa', {
+          templateUrl: 'https://rodrigoecomerce.github.io/templates/empresa.html',
+          controller: 'EmpresaController'
+        })     
        .otherwise({
         redirectTo: '/'
        });
