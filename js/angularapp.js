@@ -10,7 +10,7 @@ var app = angular.module("myApp", []);
     app.config(function($routeProvider) {
       $routeProvider
         .when('/contato', {
-          templateUrl: 'contatopage.html',
+          templateUrl: 'contactpage.html',
           controller: 'ContatoController'
         })
         .when('/', {
