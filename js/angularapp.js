@@ -24,7 +24,7 @@ var app = angular.module("app", ["ngRoute"]);
     $('.slider').slider();
 });
       app.controller("NavController", function($scope, $location) {
- $('.button-collapse').sideNav();
+ $('.button-collapse').sideNav(closeOnClick: true);
         
          $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
