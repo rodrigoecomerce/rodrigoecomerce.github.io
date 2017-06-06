@@ -1,5 +1,7 @@
 (function() {
   'use strict';
+  
+  var baseURL = 'rodrigoecomerce.github.io';
 var app = angular.module("app", ["ngRoute"]); 
   
   
@@ -50,7 +52,7 @@ var app = angular.module("app", ["ngRoute"]);
     restrict: 'A',
     controller: 'NavController',
     controllerAs: 'ctrl',
-    templateUrl: 'http://www.odati.pro/templates/navbar.html'
+    templateUrl: baseURL + '/templates/navbar.html'
   };
 });
   
@@ -59,7 +61,7 @@ var app = angular.module("app", ["ngRoute"]);
     restrict: 'A',
     controller: 'FooterController',
     controllerAs: 'ctrl',
-    templateUrl: 'http://www.odati.pro/templates/footer.html'
+    templateUrl: baseURL+ '/templates/footer.html'
   };
 });
   
@@ -68,11 +70,11 @@ var app = angular.module("app", ["ngRoute"]);
     app.config(function($routeProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: 'http://www.odati.pro/templates/home.html',
+          templateUrl: baseURL + '/templates/home.html',
           controller: 'MainController'
         })
         .when('/contato', {
-          templateUrl: 'http://www.odati.pro/templates/contato.html',
+          templateUrl: baseURL + '/templates/contato.html',
           controller: 'ContatoController'
         })
       .when('/hello', {
@@ -80,11 +82,11 @@ var app = angular.module("app", ["ngRoute"]);
           controller: 'HelloController'
         })     
             .when('/empresa', {
-          templateUrl: 'http://www.odati.pro/templates/empresa.html',
+          templateUrl: baseURL + '/templates/empresa.html',
           controller: 'EmpresaController'
         })     
                   .when('/servicos', {
-          templateUrl: 'http://www.odati.pro/templates/servicos.html',
+          templateUrl: baseURL + '/templates/servicos.html',
           controller: 'ServicosController'
         })     
        .otherwise({
