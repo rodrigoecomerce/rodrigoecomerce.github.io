@@ -4,7 +4,7 @@ var app = angular.module("app", ["ngRoute"]);
   
   
 //  app.run([ '$templateCache', function($templateCache) {
-//  $templateCache.put('http://www.odati.com.br/templates/home.html', 'http://www.odati.com.br/templates/contato.html', 'http://www.odati.com.br/templates/empresa.html', 'http://www.odati.com.br/templates/servicos.html');
+//  $templateCache.put('http://www.odati.com.br/templates/home.html', 'http://www.odati.pro/templates/contato.html', 'http://www.odati.com.br/templates/empresa.html', 'http://www.odati.com.br/templates/servicos.html');
 //}]);
 /*  
   app.run(function($rootScope, $route, $routeParams, $location) {
@@ -50,7 +50,7 @@ var app = angular.module("app", ["ngRoute"]);
     restrict: 'A',
     controller: 'NavController',
     controllerAs: 'ctrl',
-    templateUrl: 'http://www.odati.com.br/templates/navbar.html'
+    templateUrl: 'http://www.odati.pro/templates/navbar.html'
   };
 });
   
@@ -59,7 +59,7 @@ var app = angular.module("app", ["ngRoute"]);
     restrict: 'A',
     controller: 'FooterController',
     controllerAs: 'ctrl',
-    templateUrl: 'http://www.odati.com.br/templates/footer.html'
+    templateUrl: 'http://www.odati.pro/templates/footer.html'
   };
 });
   
@@ -68,11 +68,11 @@ var app = angular.module("app", ["ngRoute"]);
     app.config(function($routeProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: 'http://www.odati.com.br/templates/home.html',
+          templateUrl: 'http://www.odati.pro/templates/home.html',
           controller: 'MainController'
         })
         .when('/contato', {
-          templateUrl: 'http://www.odati.com.br/templates/contato.html',
+          templateUrl: 'http://www.odati.pro/templates/contato.html',
           controller: 'ContatoController'
         })
       .when('/hello', {
@@ -80,11 +80,11 @@ var app = angular.module("app", ["ngRoute"]);
           controller: 'HelloController'
         })     
             .when('/empresa', {
-          templateUrl: 'http://www.odati.com.br/templates/empresa.html',
+          templateUrl: 'http://www.odati.pro/templates/empresa.html',
           controller: 'EmpresaController'
         })     
                   .when('/servicos', {
-          templateUrl: 'http://www.odati.com.br/templates/servicos.html',
+          templateUrl: 'http://www.odati.pro/templates/servicos.html',
           controller: 'ServicosController'
         })     
        .otherwise({
